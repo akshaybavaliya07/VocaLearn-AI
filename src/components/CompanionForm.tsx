@@ -22,6 +22,8 @@ import {
 import { subjects } from "@/constants";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "./ui/button";
+import { createCompanion } from "@/lib/actions/companion.action";
+import { redirect } from "next/navigation";
 
 const CompanionForm = () => {
   const form = useForm<CompanionFormValues>({
@@ -36,8 +38,14 @@ const CompanionForm = () => {
     },
   });
 
-  const onSubmit = (data: CompanionFormValues) => {
-    console.log(data);
+  const onSubmit = async (data: CompanionFormValues) => {
+    const companion = await createCompanion(data);
+
+    if(companion) {
+      redirect(`/companions/${companion.id}`);
+    } else {
+      redirect('/');
+    }
   };
 
   return (

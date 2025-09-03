@@ -16,35 +16,34 @@ export const subjectsColors = {
   economics: "#C8FFDF",
 };
 
-
 export const companions = [
-    {
-        id: "123",
-        name: "Neura the Brainy Explorer",
-        topic: "Neura Network of Brain",
-        subject: "Science",
-        duration: 45,
-        color: "#ffda6e",
-        bookmarked: false,
-    },
-    {
-        id: "456",
-        name: "Countsy the Number Wizard",
-        topic: "Derivatives and Integrals",
-        subject: "Science",
-        duration: 30,
-        color: "#e5d0ff",
-        bookmarked: false,
-    },
-    {
-        id: "789",
-        name: "Verba the Vocubulary Builder",
-        topic: "Language",
-        subject: "English Literature",
-        duration: 30,
-        color: "#BDE7FF",
-        bookmarked: false,
-    }
+  {
+    id: "123",
+    name: "Neura the Brainy Explorer",
+    topic: "Neura Network of Brain",
+    subject: "Science",
+    duration: 45,
+    color: "#ffda6e",
+    bookmarked: false,
+  },
+  {
+    id: "456",
+    name: "Countsy the Number Wizard",
+    topic: "Derivatives and Integrals",
+    subject: "Science",
+    duration: 30,
+    color: "#e5d0ff",
+    bookmarked: false,
+  },
+  {
+    id: "789",
+    name: "Verba the Vocubulary Builder",
+    topic: "Language",
+    subject: "English Literature",
+    duration: 30,
+    color: "#BDE7FF",
+    bookmarked: false,
+  },
 ];
 
 export const recentSessions = [
